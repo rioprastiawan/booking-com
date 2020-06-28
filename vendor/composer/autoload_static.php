@@ -4,8 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitdd05c7ec5f0a8dd10d279d61c2adbfdd
+class ComposerStaticInit0d46098a8ca0ce5521de24d316ee3fcf
 {
+    public static $files = array (
+        '9b1d7ffb099a3197ce633c15ec5cd993' => __DIR__ . '/..' . '/twlve/bookingcom/src/Helper/function.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'T' => 
         array (
@@ -23,8 +27,8 @@ class ComposerStaticInitdd05c7ec5f0a8dd10d279d61c2adbfdd
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitdd05c7ec5f0a8dd10d279d61c2adbfdd::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitdd05c7ec5f0a8dd10d279d61c2adbfdd::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit0d46098a8ca0ce5521de24d316ee3fcf::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit0d46098a8ca0ce5521de24d316ee3fcf::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }

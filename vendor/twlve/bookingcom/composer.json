@@ -1,7 +1,7 @@
 {
     "name": "twlve/bookingcom",
     "description": "Auto Register & Get Bonus from Booking.com",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "php", "library", "bookingcom", "register", "free", "wallet"
     ],
@@ -19,6 +19,9 @@
     "autoload": {
         "psr-4": {
             "Twlve\\Bookingcom\\": "src"
-        }
+        },
+        "files":[
+            "src/Helper/function.php"
+          ]
     }
 }

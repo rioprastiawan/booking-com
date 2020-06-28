@@ -270,7 +270,7 @@ class Booking
     public static function getDeviceId()
     {
         if (self::$deviceId === null) {
-            self::$deviceId = Meta::DEVICE_ID;
+            self::$deviceId = gen_uuid();
         }
 
         return self::$deviceId;
