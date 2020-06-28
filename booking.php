@@ -20,7 +20,7 @@ $register = $booking->register($email, $password);
 
 if (!$register->success) {
     checkConnection($register);
-    echo "\n[!] ERROR : " . $register->error_message;
+    echo "\n[!] ERROR : " . $register->error_message . "\n";
     die();
 }
 
@@ -33,7 +33,7 @@ $createWishList = $booking->createWishList();
 
 if (!$createWishList->success) {
     checkConnection($createWishList);
-    echo "\n\n[!] ERROR : " . $createWishList->error_message;
+    echo "\n\n[!] ERROR : " . $createWishList->error_message . "\n";
     die();
 }
 
@@ -41,7 +41,7 @@ foreach ($hotels as $hotel) {
     $saveWishList = $booking->saveWishList($createWishList->data->id, $hotel);
     if (!$saveWishList->success) {
         checkConnection($saveWishList);
-        echo "\n\n[!] ERROR : " . $saveWishList->error_message;
+        echo "\n\n[!] ERROR : " . $saveWishList->error_message . "\n";
         die();
     }
 
@@ -49,7 +49,7 @@ foreach ($hotels as $hotel) {
         echo "\n\n[*] " . $saveWishList->data->gta_add_three_items_campaign_status->modal_body_text . "\n";
         echo "[*] " . $saveWishList->data->gta_add_three_items_campaign_status->modal_header_text . "\n";
 
-        echo "\n[*] Logout";
+        echo "\n[*] Logout\n";
         $logout = $booking->logout();
         die();
     }
