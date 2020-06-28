@@ -1,0 +1,48 @@
+[
+    {
+        "name": "twlve/bookingcom",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/twlve/bookingcom.git",
+            "reference": "88bcec3cde9a8708acc80e556b8b817621c3ee57"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/twlve/bookingcom/zipball/88bcec3cde9a8708acc80e556b8b817621c3ee57",
+            "reference": "88bcec3cde9a8708acc80e556b8b817621c3ee57",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.0"
+        },
+        "time": "2020-06-28T16:15:54+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Twlve\\Bookingcom\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Rio Prastiawan",
+                "email": "akunviprio@gmail.com"
+            }
+        ],
+        "description": "Auto Register & Get Bonus from Booking.com",
+        "keywords": [
+            "bookingcom",
+            "free",
+            "library",
+            "php",
+            "register",
+            "wallet"
+        ]
+    }
+]
