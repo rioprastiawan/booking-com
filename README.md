@@ -12,3 +12,6 @@ composer install
 ```bash
 php booking.php
 ```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
